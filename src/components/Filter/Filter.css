@@ -1,0 +1,35 @@
+.filter {
+  width: 232px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  font-size: 20px;
+  block-size: fit-content;
+}
+
+.filter__title {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Центрирует текст по горизонтали */
+  align-items: center; /* Центрирует текст по вертикали */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #a0b0b9;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.filter__items label,
+.filter__item {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.filter__items label:hover,
+.filter__item:hover {
+  background: rgba(22, 119, 255, 0.2);
+}

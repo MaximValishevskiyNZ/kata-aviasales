@@ -1,0 +1,16 @@
+.sorting {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sorting-element {
+  text-transform: uppercase;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sorting-element span {
+  text-align: center;
+}
