@@ -44,3 +44,17 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.empty-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
