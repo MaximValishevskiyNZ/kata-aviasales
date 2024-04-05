@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <div className="logo-container">
       <img
-        src='src/assets/Logo.png'
+        src='https://i.imgur.com/gIqEYCt.png'
         alt="Descriptive alternative text of the image"
         className="logo"
         loading="lazy"
