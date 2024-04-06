@@ -33,3 +33,9 @@
 .filter__item:hover {
   background: rgba(22, 119, 255, 0.2);
 }
+
+@media (max-width: 900px) {
+  .filter {
+    width: 100%;
+  }
+}

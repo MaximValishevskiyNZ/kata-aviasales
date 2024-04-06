@@ -58,3 +58,9 @@
   align-items: center;
   height: 300px;
 }
+
+@media (max-width: 900px) {
+  .ticket {
+    width: 100%;
+  }
+}
