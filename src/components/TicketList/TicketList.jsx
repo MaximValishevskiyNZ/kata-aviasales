@@ -93,20 +93,21 @@ export default function TicketList() {
   }
 
   return (
-  <>
-    {loading ? (
-        <div className="loader-container">
+      <>
+        {(loading) &&
+          <div className="loader-container">
           <Spin size="large" />
-        </div>
-    )  : tickets.length === 0 ? (
-        <div className="empty-container">
-          <Empty
-              description="Рейсов, подходящих под заданные фильтры, не найдено"
-          />
-        </div>
-    ) : (
+          </div>
+        }
+        {(tickets.length === 0 && !loading) ? (
+            <div className="empty-container">
+              <Empty
+                  description="Рейсов, подходящих под заданные фильтры, не найдено"
+              />
+            </div>
+        ) : (
         tickets.slice(0, ticketsShow).map((ticket) => (
-            <div className="ticket">
+            <div className="ticket" >
               <div className="ticket__header">
                 <span className="ticket__header--price">{ticket.price} P</span>
                 <img
@@ -150,12 +151,12 @@ export default function TicketList() {
             </div>
         ))
     )}
-    {tickets.length !== 0 && (<div
+    {(tickets.length !== 0 && !loading) && (<button
         className="show-more"
         onClick={() => setTicketsShow(ticketsShow + 5)}
     >
       Показать еще 5 билетов!
-    </div>)}
+    </button>)}
   </>
   );
 }

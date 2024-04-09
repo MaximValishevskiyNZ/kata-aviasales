@@ -39,3 +39,15 @@
     width: 100%;
   }
 }
+
+.ant-checkbox-checked .ant-checkbox-inner {
+
+ background: white;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  border-color: #1677ff; /* Белый цвет галочки */
+}
+
+
+

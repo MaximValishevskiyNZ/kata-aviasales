@@ -43,3 +43,9 @@ body {
   background: #f3f7fa;
   font-family: 'Open Sans', sans-serif;
 }
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
